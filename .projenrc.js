@@ -1,7 +1,7 @@
 const { AwsCdkTypeScriptApp } = require('projen');
 
 const project = new AwsCdkTypeScriptApp({
-  cdkVersion: '1.73.0',
+  cdkVersion: '2.8.0',
   defaultReleaseBranch: 'main',
   jsiiFqn: "projen.AwsCdkTypeScriptApp",
   name: 'aws-cdk-organization-stacksets',
