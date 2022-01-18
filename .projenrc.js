@@ -5,6 +5,10 @@ const project = new AwsCdkTypeScriptApp({
   defaultReleaseBranch: 'main',
   jsiiFqn: "projen.AwsCdkTypeScriptApp",
   name: 'aws-cdk-organization-stacksets',
+  cdkDependencies: [
+    '@aws-cdk/aws-lambda',
+    '@aws-cdk/aws-iam',
+  ],
 
   /* AwsCdkTypeScriptAppOptions */
   // appEntrypoint: 'main.ts',                                                 /* The CDK app's entrypoint (relative to the source directory, which is "src" by default). */
